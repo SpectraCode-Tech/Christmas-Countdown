@@ -1,0 +1,59 @@
+body{
+background-color: hsl(246, 100%, 6%);
+}
+#container{
+justify-self: center;
+align-self: center;
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: url(bg1.jpg);
+background-size: cover;
+height: 98vh;
+width: 98vh;
+}
+
+#smallpos{
+flex-direction: column;
+justify-self: center;
+align-self: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#countdown {
+  backdrop-filter: blur(5px);
+  font-size: 2em;
+  color: hsl(0, 84%, 40%);
+}
+p,h2{
+  font-size: 2rem;
+}
+span{
+  margin-left: 50px;
+  color: rgb(196, 192, 192);
+}
+.btmtext{
+  color: white;
+}
+
+@media (max-width: 768px) {
+  body{
+    overflow: hidden;
+    background-image: url(bg1.jpg);
+    background-size: cover;
+    }
+
+    #smallpos{
+      justify-self: center;
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      }
+
+  #countdown {
+    font-size: 2rem;
+  }
+}
